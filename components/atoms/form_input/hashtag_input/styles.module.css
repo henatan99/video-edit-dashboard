@@ -1,0 +1,52 @@
+.inputLabel {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.textInput { 
+    padding: 1rem;
+    width: 100%auto;
+    border: none;
+    outline: none;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.formGroup > input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    background-image: url('/assets/searchIcon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.inputDiv {
+    width: 100%;
+    height: 4rem;
+    margin: 8px 0;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.hashTag {
+    display: flex;
+    height: 2rem; 
+    alignItems: center; 
+    margin: 0.5rem; 
+    background: black;
+    color: wheat;
+}
+
+.hashTagCancel {
+    padding: 0.5rem;
+}

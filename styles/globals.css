@@ -24,3 +24,12 @@ a {
     background: black;
   }
 }
+
+ul {
+  decoration: none;
+  list-style: none;
+  padding-inline-start: 0;
+}
+li {
+  style: none;
+}
