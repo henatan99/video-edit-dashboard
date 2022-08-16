@@ -9,7 +9,7 @@ const NavItem = (props) => {
         <li className={styles.item}>
             <Link href='/'>
                 <a className={styles.icon}>
-                    <Image src={icon} width={12} height={12} />
+                    <Image src={icon} width={15} height={15} />
                 </a>
             </Link>
             <Link href='/'>

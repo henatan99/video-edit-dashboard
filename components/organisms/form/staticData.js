@@ -1,10 +1,10 @@
 export const formFields = [
-    {label: 'Video Title', placeholder: 'Newton s cradle', type: 'text', iconSrc: '/assets/arrow-down-3101.svg'},
-    {label: 'Subject', placeholder: 'Chemistry', type: 'text', iconSrc: '/assets/arrow-down-3101.svg'},
+    {label: 'Video Title', placeholder: 'Newton s cradle', type: 'text', iconSrc: '/assets/editIcon.png'},
+    {label: 'Subject', placeholder: 'Chemistry', type: 'text', iconSrc: '/assets/editIcon.png'},
     {label: 'Category', placeholder: 'Inspiration', type: 'select', iconSrc: '/assets/arrow-down-3101.svg', options: ['Motivation', 'Activation', 'Imagination', 'Inspiration']},
     {label: 'Primers', placeholder: 'Lorem Ipsum', type: 'text', iconSrc: '/assets/arrow-down-3101.svg'},
-    {label: 'Add Hashtag', placeholder: 'Keyword', type: 'hashtag', iconSrc: '/assets/arrow-down-3101.svg'},
-    {label: 'Current Hashtag', placeholder: 'Science', type: 'text', iconSrc: '/assets/arrow-down-3101.svg'},
+    {label: 'Add Hashtag', placeholder: 'Keyword', type: 'hashtag', iconSrc: '/assets/plusIcon.png'},
+    {label: 'Current Hashtag', placeholder: 'Science', type: 'text', iconSrc: '/assets/editIcon.png'},
 ]
 
 export const levelFormFields = [

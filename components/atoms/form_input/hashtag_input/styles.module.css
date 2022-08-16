@@ -60,10 +60,15 @@
     position: absolute; 
     right: 1rem;
     bottom: 0;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
 }
 
 .btn {
     position: relative;
-    height: 1.7rem;
+    /* height: 1.7rem; */
     display: flex;
+    height: 1rem;
+    opacity: 0.3;
 }

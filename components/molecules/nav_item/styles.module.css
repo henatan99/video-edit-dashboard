@@ -3,13 +3,25 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 2rem;
+    padding: 0.6rem 0.6rem 0.6rem 2rem;
 }
 
-.item a {
+.item:hover, .item:hover > span {
+    background: #e9f1fa;
+    color: #2b76d2;
+}
+
+.item a2{
     font-size: 0.9rem;
 }
 
 .icon {
     margin-right: 0.8rem;
+}
+
+.icon img {
+    /* background: red; */
+    filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+  opacity: 0.7;
 }

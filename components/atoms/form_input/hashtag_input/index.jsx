@@ -65,7 +65,7 @@ const HashTagInput = (props) => {
                 </div>
                 <div className={styles.btnWrapper}>
                     <div className={styles.btn} onClick={handleAddHashTag} >
-                        <Image src={iconSrc} width={12} height={12} />
+                        <Image src={iconSrc} width={15} height={12} />
                     </div>
                 </div>
             </div>
