@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A video editing dashboard with custom styling
+
+A simple Video editing responsive page with a from containing different input fields. It is built by NextJS and plain CSS. 
+
+![Screenshot](docs/desktop-view.gif)
+![Screenshot](docs/laptop-tablet-view.gif)
+![Screenshot](docs/mobile-view.gif)
+
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.JS
+- React
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### SetUp 
+- Clone the repository 
+`git clone https://github.com/henatan99/video-edit-dashboard.git`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- cd to the project directory 
+`cd video_edit_dashboard`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Install dependancies 
+`npm install`
 
-## Learn More
+- And follow the App Usage instructions in the next section
 
-To learn more about Next.js, take a look at the following resources:
+### `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Usage
+Run the app in local server and experiment with it. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For linter checks and auto-correct
+- `npx eslint . --fix`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Authors
+
+👤 **Henok Mossissa**
+
+- GitHub: [@henatan99](https://github.com/henatan99)
+- Twitter: [@henatan99](https://twitter.com/henatan99)
+- LinkedIn: [Henok Mossissa](https://www.linkedin.com/in/henok-mekonnen-2a251613/)
+
+## :handshake: Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a :star:️ if you like this project!
+
+## Acknowledgment 
+
+- Facebook team who created creat-react-app API 
+- [invisionapp](https://projects.invisionapp.com/share/K7V8HV6Q9HM#/screens/397486263)
+- [incsub](https://incsub.com/careers/)
+
+## :memo: License
+
+This project is [MIT](./LICENSE) licensed.
