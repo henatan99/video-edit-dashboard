@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideNav {
+    width: 12%;
+}
+
+.dashboard {
+    display: flex;
+    background: #F9F9F9;
+    height: 115vh; 
+    padding: 4rem 2rem;
+    marginTop: 2px;
+    width: 88%;
+    position: relative;
+}
+
+.editView {
+    margin: 0.6%;
+    background: white;
+    opacity: 1;
+    padding: 1.5%;
+    width: 25%;
+    position: relative;
+    border-radius: 0.6rem;
+}
+
+.form {
+    margin: 0.6%;
+    background: white;
+    opacity: 1;
+    padding: 1.5%;
+    width: 75%;
+    position: relative;
+    border-radius: 0.6rem;
+}
+
+.title {
+    position: absolute;
+    top: 1.8rem;
+    left: 3rem;
+    font-size: 1.1rem;
+}

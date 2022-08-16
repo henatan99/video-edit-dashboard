@@ -4,7 +4,7 @@ const Button = (props) => {
     const { text, variant } = props;
     return (
         <button 
-            className={`button` `${variant === 'primary' && styles.primary}`}
+            className={`${styles.button} ${variant === 'primary' && styles.primary}`}
             type="submit"
         >
             {text}

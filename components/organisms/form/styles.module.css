@@ -1,14 +1,28 @@
-.formElem {
+.formDiv, .btnsWrapper {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
 }
 
+.formElem {
+    fontSize: 0.6rem;
+}
+
+.btnsWrapper {
+    position: absolute;
+    bottom: 1rem;
+}
+
 .inputWrapper {
-    width: 48%;
+    width: 49%;
     /* margin-right: 4%; */
+    margin-bottom: 1rem;
+}
+
+.btn {
+    width: 46.3%;
 }
 
 .formElem div:nth-child(odd) {
-    margin-right: 4%;
+    margin-right: 2%;
 }

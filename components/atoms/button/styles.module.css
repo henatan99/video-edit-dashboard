@@ -1,0 +1,13 @@
+.button {
+    border: 0.5px solid #2C69FF;
+    border-radius: 0.5rem;
+    width: 100%;
+    background: none;
+    padding: 0.4rem;
+    color: #2C69FF;
+}
+
+.primary {
+    background-color: #2C69FF;
+    color: white;
+}

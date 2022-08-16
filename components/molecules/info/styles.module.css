@@ -1,0 +1,18 @@
+.info {
+    display: flex;
+    flex-direction: row; 
+    justifyContent: flex-start;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.iconWide {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}

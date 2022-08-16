@@ -3,8 +3,8 @@ import { useState } from 'react';
 import styles from './styles.module.css'
 
 const HashTagInput = (props) => {
-    const [hashTags, setHashTags] = useState(['hen', 'pc']);
-    const { label, placeholder, icon, type, id, name } = props;
+    const [hashTags, setHashTags] = useState([]);
+    const { label, placeholder, iconSrc, type, id, name } = props;
     const [hashTag, setHashTag] = useState();
 
     const handleAddHashTag = (e) => {
@@ -43,8 +43,9 @@ const HashTagInput = (props) => {
                         hashTags.length > 0 && 
                         hashTags.map((hashTag, index) => {
                             return (
-                                <span className={styles.hashTag}><span style={{ padding: '0.5rem'}}>{hashTag}</span>
-                                    <span className={styles.hashTagCancel} id={index} role='button' onClick={handleCancel} style={{ padding: '0.5rem'}}>X</span>
+                                <span className={styles.hashTag}>
+                                    <input value={hashTag} placeholder={hashTag} className={styles.hashTagInput} />
+                                    <button className={styles.hashTagCancel} id={index} role='button' onClick={handleCancel} >x</button>
                                 </span>
                             )
                         })
@@ -62,9 +63,9 @@ const HashTagInput = (props) => {
                         onKeyDown={(e) => e.key != 'Enter'}
                     />
                 </div>
-                <div style={{ position: 'absolute', right: '1rem', bottom: 0}}>
-                    <div style={{  position: 'relative', height: '4rem', display: 'flex'}} onClick={handleAddHashTag} >
-                        <Image src='/assets/arrow-down-3101.svg' width={30} height={30} />
+                <div className={styles.btnWrapper}>
+                    <div className={styles.btn} onClick={handleAddHashTag} >
+                        <Image src={iconSrc} width={12} height={12} />
                     </div>
                 </div>
             </div>

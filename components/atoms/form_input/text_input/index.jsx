@@ -1,17 +1,21 @@
+import Image from 'next/image';
 import styles from './styles.module.css'
 
 const TextInput = (props) => {
-    const { label, placeholder, icon, type, id, name } = props;
+    const { label, placeholder, iconSrc, type, id, name, background } = props;
     return (
         <div className={styles.formGroup}>
-            <div>
-                <label
-                    className={styles.inputLabel} 
-                    for={name} 
-                >
-                    {label}
-                </label>
-            </div>
+            {
+                label && 
+                <div>
+                    <label
+                        className={styles.inputLabel} 
+                        for={name} 
+                    >
+                        {label}
+                    </label>
+                </div>
+            }
             <div className={styles.inputDiv}>
                 <input
                     className={styles.textInput}
@@ -19,9 +23,15 @@ const TextInput = (props) => {
                     placeholder={placeholder} 
                     id={id} 
                     name={name}
-                    minLength={10}
+                    minLength={1}
                     maxLength={30}
+                    style={{ background: `${background}`}}
                 />
+                <div className={styles.btnWrapper}>
+                    <div className={styles.btn}>
+                        <Image src={iconSrc} width={12} height={12} />
+                    </div>
+                </div>
             </div>
         </div>
     )

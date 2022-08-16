@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    height: 7vh;
+    box-shadow: 0 0 8px #f1f1f1;
+    padding: 2rem;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.inputWrapper {
+    width: 80%;
+}

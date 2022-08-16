@@ -1,0 +1,22 @@
+.topInfo {
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    padding-right: 1.2rem;
+}
+
+.media {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.bottomInfo {
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding-right: 1.2rem;
+}

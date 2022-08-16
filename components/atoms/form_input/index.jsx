@@ -11,7 +11,8 @@ const Input = (props) => {
                 type === 'select' ? 
                 <SelectInput
                     options={props.options}
-                    label={props.label}     
+                    label={props.label} 
+                    iconSrc={props.iconSrc}    
                 /> 
                     : 
                 type === 'hashtag' ?
@@ -21,6 +22,7 @@ const Input = (props) => {
                     icon={props.icon}
                     id={props.id}
                     name={props.name}
+                    iconSrc={props.iconSrc}
                 />
                     :
                 <TextInput
@@ -29,6 +31,8 @@ const Input = (props) => {
                     icon={props.icon}
                     id={props.id}
                     name={props.name}
+                    iconSrc={props.iconSrc}
+                    background={props.background}
                 />
             }
         </>
