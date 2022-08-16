@@ -20,9 +20,41 @@
 }
 
 .btn {
-    width: 46.3%;
+    width: 47%;
 }
 
-.formElem div:nth-child(odd) {
+.formDivWrapper div:nth-child(odd) {
     margin-right: 2%;
+}
+
+.btnsWrapper div:nth-child(odd) {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+    .avatar {
+        margin-right: 10%;
+    }
+
+    .editFrameInner {
+        display: flex;
+        align-items: center;
+    }
+
+    .btnsWrapper {
+        position: relative;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .btn {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .inputWrapper {
+        width: 100%;
+    }
 }

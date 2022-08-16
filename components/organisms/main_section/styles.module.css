@@ -10,7 +10,7 @@
 .dashboard {
     display: flex;
     background: #F9F9F9;
-    height: 115vh; 
+    min-height: 115vh; 
     padding: 4rem 2rem;
     marginTop: 2px;
     width: 88%;
@@ -42,4 +42,67 @@
     top: 1.8rem;
     left: 3rem;
     font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .editView {
+        position: relative;
+        width: 80%;
+        height: auto;
+    }
+
+    .editView > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        position: relative;
+        width: 100%;
+    }
+
+    .sideNav {
+        width: 20%;
+    }
+
+    .title {
+        left: 8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sideNav {
+        display: none; 
+    }
+
+    .dashboard {
+        width: 100%;
+    }
+
+    .editView {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        left: 0;
+        text-align: center;
+        top: 0;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+   
 }

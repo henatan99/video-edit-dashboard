@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './styles.module.css';
 import Input from '../../atoms/form_input';
 import { searchInput, avatar } from './staticData';
@@ -7,7 +8,10 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <h3 style={{ marginBlockStart: 0, marginBlockEnd: 0}}>
+            <div className={styles.hambergerIcon}>
+                <Image src='/assets/hambergerIcon.png' width={15} height={15} />
+            </div>
+            <h3 className={styles.logo}>
                 Logo
             </h3>
             <div className={styles.headerRight}>

@@ -3,3 +3,50 @@
     bottom: 1rem;
     width: 83.2%;
 }
+
+.avatar {
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 1024px) {
+    .avatar {
+        margin-right: 10%;
+    }
+
+    .avatar > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .editFrameInner {
+        display: flex;
+        align-items: center;
+    }
+
+    .btnWrapper {
+        position: relative;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .editFrameInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .avatar {
+        width: 100%;
+        /* display: flex; */
+    }
+}

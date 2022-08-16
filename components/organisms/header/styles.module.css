@@ -2,7 +2,7 @@
     width: 100%;
     height: 7vh;
     box-shadow: 0 0 8px #f1f1f1;
-    padding: 2rem;
+    /* padding: 2rem; */
     z-index: 99;
     display: flex;
     justify-content: space-between;
@@ -14,8 +14,47 @@
     align-items: center;
     width: 35%;
     justify-content: space-between;
+    margin-right: 2rem;
 }
 
 .inputWrapper {
     width: 80%;
+    margin-right: 1rem;
+}
+
+.logo {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 12%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.hambergerIcon {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 0.4rem;
+    }
+
+    .headerRight {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .headerRight {
+        width: 60%;
+    }
+
+    .hambergerIcon {
+        display: block;
+        opacity: 0.7;
+    }
 }
