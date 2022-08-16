@@ -37,6 +37,7 @@
 @media screen and (max-width: 1024px) {
     .header {
         padding: 0.4rem;
+        height: 10vh;
     }
 
     .headerRight {

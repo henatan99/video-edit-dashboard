@@ -22,7 +22,7 @@ const Avatar = (props) => {
                     <span style={{ fontSize: '0.9rem', padding: '3px'}}>
                         By {name}
                     </span>
-                    <span style={{ fontSize: '0.8rem', padding: '3px'}}>
+                    <span style={{ fontSize: '0.8rem', padding: '3px', opacity: 0.6}}>
                         {username}
                     </span>
                 </div>  
