@@ -58,9 +58,8 @@ Give a :star:️ if you like this project!
 
 ## Acknowledgment 
 
-- Facebook team who created creat-react-app API 
-- [invisionapp](https://projects.invisionapp.com/share/K7V8HV6Q9HM#/screens/397486263)
-- [incsub](https://incsub.com/careers/)
+- [FLATICON](https://www.flaticon.com/) for nice icons
+- [aevue](https://www.aevue.com/)
 
 ## :memo: License
 
