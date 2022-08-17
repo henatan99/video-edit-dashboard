@@ -1,11 +1,12 @@
 import styles from './styles.module.css'
 
 const Button = (props) => {
-    const { text, variant } = props;
+    const { type, text, variant, onClick } = props;
     return (
         <button 
             className={`${styles.button} ${variant === 'primary' && styles.primary}`}
-            type="submit"
+            type={type}
+            onClick={onClick}
         >
             {text}
         </button>

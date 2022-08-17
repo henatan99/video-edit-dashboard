@@ -75,3 +75,7 @@
     height: 1.7rem;
     display: flex;
 }
+
+.btn:hover {
+    cursor: pointer;
+}

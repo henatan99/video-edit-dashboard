@@ -7,6 +7,11 @@
     color: #2C69FF;
 }
 
+.button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .primary {
     background-color: #2C69FF;
     color: white;

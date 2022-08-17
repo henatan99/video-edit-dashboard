@@ -29,8 +29,8 @@ const SelectInput = (props) => {
             </div>
             <div className={styles.customSelect}>
                 <input className={styles.selectElem} value={selected} placeholder={selected}/>
-                <div style={{ position: 'absolute', right: '1rem', bottom: 0}}>
-                    <div style={{  position: 'relative', height: '1.7rem', display: 'flex'}} onClick={handleSelectClick} onBlur={() => showOptions(false)}>
+                <div className={styles.btnWrapper}>
+                    <div className={styles.btn} onClick={handleSelectClick} onBlur={() => showOptions(false)}>
                         <Image src={iconSrc} width={12} height={12} />
                     </div>
                 </div>
