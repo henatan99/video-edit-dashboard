@@ -3,17 +3,19 @@ import { useState } from 'react';
 import styles from './styles.module.css';
 
 const SelectInput = (props) => {
-    const { options, label, type, name, iconSrc } = props;
+    const { options, label, type, name, iconSrc, propState, setPropState } = props;
 
-    const [ selected, setSelected ] = useState('Selected');
     const [ showOptions, setShowOptions ] = useState(false);
+    const selected = propState[name];
 
     const handleSelectClick = () => {
         setShowOptions(!showOptions);
     }
 
     const handleOptionClick = (e) => {
-        setSelected(e.target.innerText)
+        const newState = {...propState}
+        newState[name] = e.target.innerText;
+        setPropState(newState);
         setShowOptions(false);
     }
 

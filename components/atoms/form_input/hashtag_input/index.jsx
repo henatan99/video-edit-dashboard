@@ -3,23 +3,30 @@ import { useState } from 'react';
 import styles from './styles.module.css'
 
 const HashTagInput = (props) => {
-    const [hashTags, setHashTags] = useState([]);
-    const { label, placeholder, iconSrc, type, id, name } = props;
+    const { label, placeholder, iconSrc, type, id, name, propState, setPropState } = props;
+    const hashTags = propState[name];
+
     const [hashTag, setHashTag] = useState();
 
     const handleAddHashTag = (e) => {
         e.preventDefault();
         if(hashTag && hashTag.length > 0) {
-            setHashTags([...hashTags, hashTag])
+            setPropState({
+                ...propState, 
+                hashTags: [...propState.hashTags, hashTag]
+            });
         }
         setHashTag('');
     }
 
     const handleCancel = (e) => {
         e.preventDefault();
-        const newHashTags = [...hashTags];
+        const newHashTags = [...propState.hashTags];
         newHashTags.splice(e.target.id, 1);
-        setHashTags(newHashTags);
+        setPropState({
+            ...propState,
+            hashTags: newHashTags
+        });
     }
 
     const handleChange = (e) => {
@@ -40,7 +47,7 @@ const HashTagInput = (props) => {
             <div style={{ position: 'relative'}}>
                 <div className={styles.inputDiv}>
                     {
-                        hashTags.length > 0 && 
+                        hashTags && hashTags.length > 0 && 
                         hashTags.map((hashTag, index) => {
                             return (
                                 <span className={styles.hashTag}>

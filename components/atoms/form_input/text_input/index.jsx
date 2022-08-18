@@ -2,7 +2,16 @@ import Image from 'next/image';
 import styles from './styles.module.css'
 
 const TextInput = (props) => {
-    const { label, placeholder, iconSrc, type, id, name, background } = props;
+    const { label, placeholder, iconSrc, type, id, name, background, propState, setPropState } = props;
+
+    const value = propState && propState[name];
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        const newState = {...propState}
+        newState[name] = e.target.value;
+        setPropState(newState);
+    }
     return (
         <div className={styles.formGroup}>
             {
@@ -26,6 +35,8 @@ const TextInput = (props) => {
                     minLength={1}
                     maxLength={30}
                     style={{ background: `${background}`}}
+                    value={value}
+                    onChange={handleChange}
                 />
                 <div className={styles.btnWrapper}>
                     <div className={styles.btn}>

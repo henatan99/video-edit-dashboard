@@ -3,12 +3,32 @@ import LabeledDivider from "../../atoms/divider";
 import { formFields, levelFormFields, buttons } from "./staticData";
 import styles from './styles.module.css';
 import Button from "../../atoms/button";
+import { useState } from "react";
 
 const Form = () => {
+    const initialState = {} 
+    formFields.forEach( field => initialState[field.name] = field.initialValue);
+    levelFormFields.forEach( field => initialState[field.name] = field.initialValue);
+
+    const [state, setState] = useState(initialState);
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        alert(JSON.stringify(state))
+    }
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        if(e.target.name === 'cancel') {
+            setState(initialState);
+        } else {
+            return handleFormSubmit(e);
+        }
+    }
     
     return (
         <div style={{ height: 'inherit'}}>
-            <form className={styles.formElem}>
+            <form className={styles.formElem} onSubmit={handleFormSubmit}>
                 <div className={styles.formDivWrapper}>
                     <div className={styles.formDiv}>
                         {
@@ -16,7 +36,7 @@ const Form = () => {
                                 {
                                     return (
                                         <div className={styles.inputWrapper}>
-                                            <Input {...field} />
+                                            <Input {...field} propState={state} setPropState={setState} />
                                         </div> 
                                     )
                                 })
@@ -29,7 +49,7 @@ const Form = () => {
                                 {
                                     return (
                                         <div className={styles.inputWrapper}>
-                                            <Input {...field} />
+                                            <Input {...field} propState={state} setPropState={setState} />
                                         </div> 
                                     )
                                 })
@@ -45,6 +65,9 @@ const Form = () => {
                                     <Button
                                         text={button.text}
                                         variant={button.variant}
+                                        type={button.type}
+                                        onClick={handleClick}
+                                        name={button.name}
                                     />
                                 </div>
                             )
