@@ -4,7 +4,7 @@ export const formFields = [
     {label: 'Category', placeholder: 'Inspiration', type: 'select', name: 'category', required: true, iconSrc: '/assets/arrow-down-3101.svg', options: ['Motivation', 'Activation', 'Imagination', 'Inspiration'], initialValue: []},
     {label: 'Primers', placeholder: 'Lorem Ipsum', type: 'text', name: 'primers', required: true, iconSrc: '/assets/arrow-down-3101.svg', initialValue: ''},
     {label: 'Add Hashtag', placeholder: 'Keyword', type: 'hashtag', name: 'hashTags', required: true, iconSrc: '/assets/plusIcon.png', initialValue: []},
-    {label: 'Current Hashtag', placeholder: 'Science', type: 'text', name: 'current_hashtag', required: true, iconSrc: '/assets/editIcon.png', initialValue: ''},
+    {label: 'Current Hashtag', placeholder: 'Science', type: 'text', name: 'currentHashtag', required: true, iconSrc: '/assets/editIcon.png', initialValue: ''},
 ]
 
 export const levelFormFields = [

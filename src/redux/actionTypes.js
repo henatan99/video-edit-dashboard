@@ -1,0 +1,1 @@
+export const EDIT_VIDEO = 'EDIT_VIDEO';

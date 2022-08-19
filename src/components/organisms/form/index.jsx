@@ -4,17 +4,21 @@ import { formFields, levelFormFields, buttons } from "./staticData";
 import styles from './styles.module.css';
 import Button from "../../atoms/button";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { editVideo } from "../../../redux/actions";
 
 const Form = () => {
     const initialState = {} 
     formFields.forEach( field => initialState[field.name] = field.initialValue);
     levelFormFields.forEach( field => initialState[field.name] = field.initialValue);
+    
+    const dispatch = useDispatch();
 
     const [state, setState] = useState(initialState);
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        alert(JSON.stringify(state))
+        dispatch(editVideo(state))
     }
 
     const handleClick = (e) => {
