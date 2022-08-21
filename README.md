@@ -2,10 +2,11 @@
 
 A simple Video editing responsive page with a from containing different input fields. It is built by NextJS and plain CSS. 
 
+[Live Link](https://video-edit-dashboard.vercel.app/)
+
 ![Screenshot](docs/desktop-view.gif)
 ![Screenshot](docs/laptop-tablet-view.gif)
 ![Screenshot](docs/mobile-view.gif)
-
 
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -38,7 +39,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Run the app in local server and experiment with it. 
 
 For linter checks and auto-correct
-- `npx eslint . --fix`
+- `npm run lint` or 
+- `yarn lint`
 
 ## Authors
 

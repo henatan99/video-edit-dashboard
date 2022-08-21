@@ -2,7 +2,7 @@ export const formFields = [
     {label: 'Video Title', placeholder: 'Newton s cradle', type: 'text', name: 'video_title', required: true, iconSrc: '/assets/editIcon.png', initialValue: ''},
     {label: 'Subject', placeholder: 'Chemistry', type: 'text', name: 'subject', required: true, iconSrc: '/assets/editIcon.png', initialValue: ''},
     {label: 'Category', placeholder: 'Inspiration', type: 'select', name: 'category', required: true, iconSrc: '/assets/arrow-down-3101.svg', options: ['Motivation', 'Activation', 'Imagination', 'Inspiration'], initialValue: []},
-    {label: 'Primers', placeholder: 'Lorem Ipsum', type: 'text', name: 'primers', required: true, iconSrc: '/assets/arrow-down-3101.svg', initialValue: ''},
+    {label: 'Primers', placeholder: 'Lorem Ipsum', type: 'select', name: 'primers', required: true, iconSrc: '/assets/arrow-down-3101.svg', options: ['Lorem Ipsum', 'Lorem Ipsum'], initialValue: []},
     {label: 'Add Hashtag', placeholder: 'Keyword', type: 'hashtag', name: 'hashTags', required: true, iconSrc: '/assets/plusIcon.png', initialValue: []},
     {label: 'Current Hashtag', placeholder: 'Science', type: 'text', name: 'currentHashtag', required: true, iconSrc: '/assets/editIcon.png', initialValue: ''},
 ]
