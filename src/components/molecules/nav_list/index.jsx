@@ -6,11 +6,12 @@ const NavList = (props) => {
     return (
         <ul style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: 'inherit'}}>
             {
-                navItems.map(nav => {
+                navItems.map((nav, index) => {
                     return (
                         <NavItem
                             text={nav.text}
                             icon={nav.icon}
+                            key={`${nav.text}-${index}`}
                         />
                     )
                 })

@@ -12,7 +12,7 @@ const IFrame = (props) => {
                 <Info text={time.text} icon={time.icon} variant = 'wide' />
             </span>
             <div className={styles.media}>
-                <Image src={image.src} width={image.width} height={image.height}/>
+                <Image src={image.src} width={image.width} height={image.height} alt='iFrame'/>
             </div>
             <span className={styles.bottomInfo}>
                 <Info text={likes.text} icon={likes.icon} />

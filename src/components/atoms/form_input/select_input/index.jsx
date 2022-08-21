@@ -39,7 +39,7 @@ const SelectInput = (props) => {
             <div>
                 <label
                     className={styles.selectLabel} 
-                    for={name} 
+                    htmlFor={name} 
                 >
                     {label}
                 </label>
@@ -48,7 +48,7 @@ const SelectInput = (props) => {
                 <input className={styles.selectElem} value={selected} placeholder={selected}/>
                 <div className={styles.btnWrapper}>
                     <div className={styles.btn} onClick={handleSelectClick} onBlur={() => setShowOptions(false)}>
-                        <Image src={iconSrc} width={12} height={12} />
+                        <Image src={iconSrc} width={12} height={12} alt='expandable'/>
                     </div>
                 </div>
             </div>
@@ -56,9 +56,9 @@ const SelectInput = (props) => {
                 showOptions &&
                     <ul className={styles.optionsWrapper}>
                         {
-                            options.map(option => {
+                            options.map((option, index) => {
                                 return (
-                                    <li className={styles.optionElem} onClick={handleOptionClick}>
+                                    <li className={styles.optionElem} onClick={handleOptionClick} key={`${option}-${index}`}>
                                         {option}
                                     </li>
                                 )

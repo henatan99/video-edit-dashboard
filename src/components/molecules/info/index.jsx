@@ -7,7 +7,7 @@ const Info = (props) => {
     return (
         <div className={styles.info}>
             <span className={variant === 'wide' ? styles.iconWide : styles.icon}>
-                <Image src={icon} width={15} height={15} />
+                <Image src={icon} width={15} height={15} alt='infoIcon'/>
             </span>
             <span>
                 {text}

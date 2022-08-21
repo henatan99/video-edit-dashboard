@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.hambergerIcon}>
-                <Image src='/assets/hambergerIcon.png' width={15} height={15} />
+                <Image src='/assets/hambergerIcon.png' width={15} height={15} alt='hambergerIcon'/>
             </div>
             <h3 className={styles.logo}>
                 Logo

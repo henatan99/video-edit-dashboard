@@ -7,14 +7,14 @@ const Avatar = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.photoWrapper}>
-                <Image src={photo.src} width={photo.width} height={photo.height} />
+                <Image src={photo.src} width={photo.width} height={photo.height} alt='avatar'/>
             </div>
             {
                 variant === 'expandable' ?
                 
                 <div>
                     <button className={styles.btn}>
-                        <Image src={icon.src} width={icon.width} height={icon.height}/>
+                        <Image src={icon.src} width={icon.width} height={icon.height} alt='expandable'/>
                     </button>
                 </div> 
                 :

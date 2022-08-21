@@ -19,7 +19,7 @@ const TextInput = (props) => {
                 <div>
                     <label
                         className={styles.inputLabel} 
-                        for={name} 
+                        htmlFor={name} 
                     >
                         {label}
                     </label>
@@ -40,7 +40,7 @@ const TextInput = (props) => {
                 />
                 <div className={styles.btnWrapper}>
                     <div className={styles.btn}>
-                        <Image src={iconSrc} width={12} height={12} />
+                        <Image src={iconSrc} width={12} height={12} alt='edit'/>
                     </div>
                 </div>
             </div>

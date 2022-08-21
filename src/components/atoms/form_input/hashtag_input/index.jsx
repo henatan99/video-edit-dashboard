@@ -39,7 +39,7 @@ const HashTagInput = (props) => {
             <div>
                 <label
                     className={styles.inputLabel} 
-                    for={name} 
+                    htmlFor={name} 
                 >
                     {label}
                 </label>
@@ -50,9 +50,9 @@ const HashTagInput = (props) => {
                         hashTags && hashTags.length > 0 && 
                         hashTags.map((hashTag, index) => {
                             return (
-                                <span className={styles.hashTag}>
+                                <span className={styles.hashTag} key={`${hashTag}-${index}`}>
                                     <input value={hashTag} placeholder={hashTag} className={styles.hashTagInput} />
-                                    <button className={styles.hashTagCancel} id={index} role='button' onClick={handleCancel} >x</button>
+                                    <button className={styles.hashTagCancel} id={index} role='button' onClick={handleCancel} alt='x'>x</button>
                                 </span>
                             )
                         })
@@ -72,7 +72,7 @@ const HashTagInput = (props) => {
                 </div>
                 <div className={styles.btnWrapper}>
                     <div className={styles.btn} onClick={handleAddHashTag} >
-                        <Image src={iconSrc} width={15} height={12} />
+                        <Image src={iconSrc} width={15} height={12} alt={`+`}/>
                     </div>
                 </div>
             </div>

@@ -36,10 +36,10 @@ const Form = () => {
                 <div className={styles.formDivWrapper}>
                     <div className={styles.formDiv}>
                         {
-                            formFields.map(field => 
+                            formFields.map((field, index) => 
                                 {
                                     return (
-                                        <div className={styles.inputWrapper}>
+                                        <div className={styles.inputWrapper} key={`${field.name}-${index}`}>
                                             <Input {...field} propState={state} setPropState={setState} />
                                         </div> 
                                     )
@@ -49,10 +49,10 @@ const Form = () => {
                     <LabeledDivider label='Levels'/>
                     <div className={styles.formDiv}>
                         {
-                            levelFormFields.map(field => 
+                            levelFormFields.map((field, index) => 
                                 {
                                     return (
-                                        <div className={styles.inputWrapper}>
+                                        <div className={styles.inputWrapper} key={`${field.name}-${index}`}>
                                             <Input {...field} propState={state} setPropState={setState} />
                                         </div> 
                                     )
@@ -63,9 +63,9 @@ const Form = () => {
                 
                 <div className={styles.btnsWrapper}>
                     {
-                        buttons.map(button => {
+                        buttons.map((button, index) => {
                             return (
-                                <div className={styles.btn}>
+                                <div className={styles.btn} key={`${button.name}-${index}`}>
                                     <Button
                                         text={button.text}
                                         variant={button.variant}
