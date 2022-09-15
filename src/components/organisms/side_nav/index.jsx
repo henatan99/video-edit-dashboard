@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 const SideNav = () => {
     const items = navItems.items;
     return (
-        <div className={styles.sideNav} style={{ height: `${navItems.height}vh`}}>
+        <div className={styles.sideNav}>
             <NavList
                 navItems={items}
             />

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from './styles.module.css'
@@ -9,6 +10,17 @@ const HashTagInput = (props) => {
     const [hashTag, setHashTag] = useState();
 
     const handleAddHashTag = (e) => {
+        e.preventDefault();
+        if(hashTag && hashTag.length > 0) {
+            setPropState({
+                ...propState, 
+                hashTags: [...propState.hashTags, hashTag]
+            });
+        }
+        setHashTag('');
+    }
+
+    const handleEditHashTag = (e) => {
         e.preventDefault();
         if(hashTag && hashTag.length > 0) {
             setPropState({
@@ -78,6 +90,27 @@ const HashTagInput = (props) => {
             </div>
         </div>
     )
+}
+
+HashTagInput.propTypes = {
+    label: PropTypes.string, 
+    placeholder: PropTypes.string, 
+    iconSrc: PropTypes.string, 
+    type: PropTypes.string, 
+    id: PropTypes.string, 
+    name: PropTypes.string, 
+    propState: PropTypes.shape({
+        formFields: PropTypes.arrayOf({
+            label: PropTypes.string,
+            placeholder: PropTypes.string,
+            type: PropTypes.string,
+            name: PropTypes.string,
+            required: PropTypes.bool,
+            iconSrc: PropTypes.string,
+            initialValue: PropTypes.array
+        })
+    }), 
+    setPropState: PropTypes.string
 }
 
 export default HashTagInput;

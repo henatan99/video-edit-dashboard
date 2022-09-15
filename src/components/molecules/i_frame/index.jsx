@@ -3,7 +3,7 @@ import Info from "../info";
 import styles from './styles.module.css';
 
 const IFrame = (props) => {
-    const { date, time, likes, comments, views, image } = props;
+    const { date, time, likes, comments, views, image, VideoComponent } = props;
 
     return (
         <div>

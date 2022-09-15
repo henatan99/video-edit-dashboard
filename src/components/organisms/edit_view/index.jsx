@@ -3,6 +3,7 @@ import Avatar from "../../molecules/avatar";
 import IFrame from "../../molecules/i_frame";
 import { iFrameInfo } from "./staticData";
 import styles from './styles.module.css';
+import VideoPlayer from "../../atoms/VideoPlayer";
 
 const EditView = () => {
     const { date, time, likes, comments, views, image, button, avatar } = iFrameInfo;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './styles.module.css'
 
 const Button = (props) => {
@@ -12,6 +13,14 @@ const Button = (props) => {
             {text}
         </button>
     )
+}
+
+Button.propTypes = {
+    type: PropTypes.string,
+    text: PropTypes.string,
+    variant: PropTypes.string,
+    onClick: PropTypes.func,
+    name: PropTypes.string
 }
 
 export default Button;

@@ -3,7 +3,7 @@ const initialState = {
     subject: '',
     category: '',
     primers: '',
-    hashTags: '',
+    hashTags: [],
     currentHashTags: '',
     level1: '',
     level2: '',

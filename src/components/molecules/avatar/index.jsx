@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from './styles.module.css';
 
 const Avatar = (props) => {
-    const { photo, name, username, icon, variant } = props;
+    const { photo, name, username, icon, variant, onExpand } = props;
     
     return (
         <div className={styles.container}>
@@ -13,7 +13,7 @@ const Avatar = (props) => {
                 variant === 'expandable' ?
                 
                 <div>
-                    <button className={styles.btn}>
+                    <button className={styles.btn} onClick={onExpand}>
                         <Image src={icon.src} width={icon.width} height={icon.height} alt='expandable'/>
                     </button>
                 </div> 

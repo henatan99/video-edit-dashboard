@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const LabeledDivider = (props) => {
@@ -12,6 +13,10 @@ const LabeledDivider = (props) => {
             />
         </div>
     )
+}
+
+LabeledDivider.propTypes = {
+    label: PropTypes.string
 }
 
 export default LabeledDivider
